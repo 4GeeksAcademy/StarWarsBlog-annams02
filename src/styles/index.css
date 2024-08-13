@@ -1,3 +1,264 @@
 /* 
     General Styles
 */
+body {
+    background-color: black;
+}
+
+/*Navbar*/
+
+.navbar-brand {
+    margin-left: 20%;
+}
+
+.botonFavoritos {
+    margin-right: 20px;
+}
+
+.dropdown-menu {
+    background-color: rgb(241, 238, 238);
+}
+
+/*App*/
+.tituloContainer {
+    color: rgb(218, 214, 214);
+    margin-left: 70px;
+}
+
+.subtitulosContainer {
+    color: rgb(218, 214, 214);
+    margin-left: 70px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+/*Cards de app y cards*/
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 50px;
+    margin-right: 65px;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #474747;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b81212;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b81212;
+}
+
+.scroll-container>div {
+    display: inline-block;
+    width: calc(18% - 20px);
+    margin-bottom: 20px;
+}
+
+/*esto es para mostrar cuantas tarjetas quiero que se vean depende del tamaño de la pantalla*/
+@media screen and (max-width: 1550px) {
+    .scroll-container>div {
+        width: calc(20% - 20px);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .scroll-container>div {
+        width: calc(25% - 20px);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .scroll-container>div {
+        width: calc(33% - 20px);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .scroll-container>div {
+        width: calc(50% - 20px);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .scroll-container>div {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card {
+    background-color: rgb(218, 214, 214);
+    margin-left: 10px;
+    width: 220px;
+    height: 250px;
+}
+
+.card-title {
+    margin-bottom: 30px;
+}
+
+.botonesFavLeerMas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerCard {
+    margin-bottom: 10px;
+}
+
+.finalContainer {
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+/*Cards de personajes detallados*/
+.cardDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.filaImagenYDescripcion {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.columnaImagenYDescripcion {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: rgb(218, 214, 214);
+}
+
+.columnaImagenYDescripcion2 {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: rgb(218, 214, 214);
+}
+
+@media screen and (max-width: 768px) {
+    .filaImagenYDescripcion {
+        flex-direction: column;
+    }
+
+    .card-body-detalle {
+        flex-direction: column;
+    }
+
+    .detalle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detallee {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.tituloDescripcion {
+    text-align: center;
+}
+
+.contenedorDescripcion {
+    margin-top: 20px;
+}
+
+.cardImagenDetalle {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardTitulo {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(218, 214, 214);
+}
+
+.card-body-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.detalle {
+    margin-right: 2%;
+    color: rgb(218, 214, 214);
+}
+
+.detallee {
+    color: rgb(218, 214, 214);
+}
+
+.separador {
+    border-top: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contenedorImagenCard {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    max-width: 100%;
+}
+
+
+.navbar {
+    height: 55px;
+}
+
+.espacioNavbar {
+    height: 70px;
+}
+
+.containerNavbar {
+    position: relative;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+.footer {
+    position: fixed;
+    bottom: -15px;
+    width: 100%;
+    background-color: #575858;
+    color: white;
+    margin-top: 80px;
+}
+
+.PrimerFooter {
+    color: black;
+    margin-bottom: 50px;
+}
