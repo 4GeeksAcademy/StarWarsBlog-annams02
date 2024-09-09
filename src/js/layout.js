@@ -7,7 +7,7 @@ import { Navbar } from "../js/component/navbar";
 import { Context } from '../js/store/appContext';
 import { PersonajeDetalle } from './component/personajeDetalle';
 import { VehiculoDetalle } from './component/vehiculoDetalle';
-import { PlanetaDetalle } from './component/planetaDetalle';
+import { PlanetaDetalle } from './component/planetaDetalle.js';
 import { Footer } from "./component/footer";
 
 
@@ -32,7 +32,7 @@ const Layout = () => {
 						<Route path="/vehiculo/:id" element={<VehiculoDetalle />} />
 						<Route path="/planeta/:id" element={<PlanetaDetalle />} />
 					</Routes>
-					<PrimerFooter />
+				
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
